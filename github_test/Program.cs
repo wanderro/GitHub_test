@@ -10,7 +10,8 @@
             Console.WriteLine($"Выберите команду: \n" +
                               $"1. Сложить числа \n" +
                               $"2. Вычесть числа \n" +
-                              $"3. Умножить числа \n");
+                              $"3. Умножить числа \n" +
+                              $"4. Поделить числа \n");
 
             var choice = Convert.ToInt32(Console.ReadLine());
 
@@ -35,6 +36,12 @@
                 {
                     var product = firstNumber * secondNumber;
                     Console.WriteLine("Результат умножения " + product);
+                    break;
+                }
+                case 4:
+                {
+                    var quotient = firstNumber - secondNumber;
+                    Console.WriteLine("Результат деления " + quotient);
                     break;
                 }
             }
